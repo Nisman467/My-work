@@ -1,0 +1,56 @@
+import time
+import sys
+
+def palpal():
+        lyrics = ['Mein ab kyun hosh may aata nahi?',
+                'Sukoon yeh dil kyun paata nahi?',
+                'Kyun torrun khud se jo thay waaday',
+                'Ke ab yeh ishq nibhaana nahi?',
+                'Mein morrun tum se jo yeh chehra',
+                'Dobara nazar milana nahi',
+                'Yeh duniya jaanay mera dard',
+                'Tujhe yeh nazar kyun aata nahi?',
+                'Sohneya, yoon tera sharmana meri jaan naa lele',
+                'Kaan ke peeche zulf chhupana, meri Jaan, kya kehne',
+                'Zaalima, tauba tera nakhra, iss ke waar, kya kehne',
+                'Thaam ke bеthe dil ko ghaayal, kahin haar naa bethein',
+                'Thaam ke bеthe dil ko ghaayal, kahin haar naa bethein',
+                'Tеri nazrein mujh se kya kehti hain?',
+                'Inn may wafa behti hai',
+                'Thori-thori si raazi, thori si khafa rehti hain',
+                'Loug hain zaalim baray, inn may jafaa dekhi hai',
+                'Yeh duniya teri nahi, mein ne tujh may hayaa dekhi hai']
+
+        speed = [0.3, 0.3, 0.4, 0.3, 0.3, 0.3, 0.8]
+
+        print("Pal Pal:")
+        #time.sleep(1.2)
+
+        for i, line in enumerate(lyrics):
+            for char in line:
+                sys.stdout.write(char)
+                sys.stdout.flush()
+                time.sleep(0.06)
+
+            print()
+            if i < len(speed):
+                time.sleep(speed[i])
+            else :
+                time.sleep(0.8)
+
+
+palpal()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
