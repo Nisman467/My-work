@@ -44,10 +44,10 @@ def circle_generate(x, y, r):
                 screen.set_at((px, py), white)
         x =x + 1
         if p < 0:
-            p =p + 2 * x + 3
+            p =p + 2 * x + 1
         else:
             y = y - 1
-            p = p + 2 * (x - y) + 5
+            p = p + 2 * (x - y) + 1
 
 def main():
     screen.fill(black)
@@ -63,3 +63,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
